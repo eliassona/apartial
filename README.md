@@ -20,8 +20,6 @@ An example
 
 ```
 
-FIXME
-
 ## License
 
 Copyright © 2016 FIXME

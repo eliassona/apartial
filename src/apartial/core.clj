@@ -1,7 +1,6 @@
 (ns apartial.core)
 
-(defn _->name [l]
-  (mapv (fn [x1 x2] (if (= x1 '_) (with-meta (symbol (str "x" x2)) {:arg-type :formal}) x1)) l (-> l count range)))
+(defn _->name [l] (mapv (fn [x1 x2] (if (= x1 '_) (with-meta (symbol (str "x" x2)) {:arg-type :formal}) x1)) l (-> l count range)))
 
 (defn formal? [arg] (= (-> arg meta :arg-type) :formal))
 
